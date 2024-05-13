@@ -15,7 +15,7 @@ void main() async {
           projectId: "crud-operation-88979",
         ))
       : Firebase.initializeApp();
-  print("firebase initialized-------------------->>>>>>>>>>>");
+
   runApp(const MyApp());
 }
 
@@ -24,6 +24,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Home());
+    return const MaterialApp(debugShowCheckedModeBanner: false, home: Home());
   }
 }
